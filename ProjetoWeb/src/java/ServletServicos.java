@@ -35,7 +35,6 @@ public class ServletServicos extends HttpServlet {
         
         Prestador p= (Prestador)request.getSession().getAttribute("prestador");
         boolean bol;
-        
         for(int i=0; i<prof.length; i++){
             Prestador_Servico ps = new Prestador_Servico();
             ps.setExperiencia(switchOptions(prof[i], request));
@@ -43,13 +42,15 @@ public class ServletServicos extends HttpServlet {
             ps.setNomeServico(prof[i]);
             ps.setDescricao(request.getParameter("descricao"));
             
-            ServiceServicos servicos = new ServiceServicos();
+           
+        ServiceServicos servicos = new ServiceServicos();
             bol = servicos.cadastrar(ps);
             
             
-            String path = request.getContextPath();
-            response.sendRedirect(path+"/index.jsp");
         }
+            String path = request.getContextPath();
+        
+            response.sendRedirect(path+"/index.jsp");
     }
     
     private String switchOptions(String s, HttpServletRequest request){

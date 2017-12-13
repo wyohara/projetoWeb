@@ -46,12 +46,10 @@ public class ServletCadastro extends HttpServlet {
             String path = request.getContextPath();
         ServiceCadastro c = new ServiceCadastro();
         c.cadastrar(novoP);
-        if (c.prestadorExiste(novoP)){
-               response.sendRedirect(path+"/registro.jsp");
-        }else{
+ 
              c.cadastrar(novoP);
             response.sendRedirect(path+"/cadastroSucesso.jsp");
-        }
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

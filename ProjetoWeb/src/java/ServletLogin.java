@@ -38,7 +38,7 @@ public class ServletLogin extends HttpServlet {
         
         //autentificando
         boolean result = loginService.autentificar(emailP, senhaP);
-        System.out.println("result");
+   
         Prestador p = loginService.getPrestador(emailP);
             
         if(result == true){                

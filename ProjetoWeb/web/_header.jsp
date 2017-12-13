@@ -28,7 +28,7 @@
         <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
           <!-- Title -->
-         <a href="<%=request.getContextPath()%>" class=" titleSite"> <span class="mdl-layout-title titleSite">Trampo Certo</span></a>
+         <a href="<%=request.getContextPath()%>/" class=" titleSite"> <span class="mdl-layout-title titleSite">Trampo Certo</span></a>
           <!-- Add spacer, to align navigation to the right -->
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation. We hide it in small screens. -->
