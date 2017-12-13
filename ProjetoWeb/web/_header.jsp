@@ -9,6 +9,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
+        <link rel="icon" href="<%=request.getContextPath()%>/icon.png">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Trampo Certo</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
