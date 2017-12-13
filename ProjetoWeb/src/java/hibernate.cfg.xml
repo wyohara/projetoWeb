@@ -48,7 +48,6 @@ Contributor(s):
     <property name="hibernate.connection.password"/>
     <property name="show_sql">true</property>
     <property name="hbm2ddl.auto">update</property>
-    <mapping class="Servico"/>
     <mapping class="Prestador_Servico"/>
     <mapping class="Prestador"/>
   </session-factory>

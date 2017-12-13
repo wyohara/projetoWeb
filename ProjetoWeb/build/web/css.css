@@ -15,6 +15,10 @@ and open the template in the editor.
 
 #formLogin input{
     float: left;
+    background-color: #fff;
+    color: #333;
+    border-radius: 20px;
+    text-align: center;
 }
 
 #formLogin .btnSubmit{
@@ -24,14 +28,7 @@ and open the template in the editor.
 
 .descriptionSite{ 
     padding-top: 30px;
-    margin: auto;
-    width: 60%;
     text-align: justify;
-}
-
-#caixaBusca{
-    margin: auto;
-    width: 60%; 
 }
 
 #caixaBusca input{
@@ -51,4 +48,15 @@ and open the template in the editor.
 
 #caixaServicos th{
     text-align: center;
+}
+
+.titleSite{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.boxContent{
+    margin: auto;
+    width: 60%; 
 }

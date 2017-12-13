@@ -7,6 +7,7 @@
 
 import java.io.Serializable;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -17,18 +18,12 @@ import javax.persistence.Table;
 @Entity
 @Table(name="prestador_servico")
 public class Prestador_Servico implements Serializable {
-    @Id
-    private int idPrestador;
-    @Id
+    @Id @GeneratedValue
     private int idServico;
-
-    public int getIdPrestador() {
-        return idPrestador;
-    }
-
-    public void setIdPrestador(int idPrestador) {
-        this.idPrestador = idPrestador;
-    }
+    private int idPrestador;
+    private String nomeServico;
+    private String experiencia;
+    private String descricao;
 
     public int getIdServico() {
         return idServico;
@@ -38,6 +33,39 @@ public class Prestador_Servico implements Serializable {
         this.idServico = idServico;
     }
     
+    
+
+    public int getIdPrestador() {
+        return idPrestador;
+    }
+
+    public void setIdPrestador(int idPrestador) {
+        this.idPrestador = idPrestador;
+    }
+
+    public String getNomeServico() {
+        return nomeServico;
+    }
+
+    public void setNomeServico(String nomeServico) {
+        this.nomeServico = nomeServico;
+    }
+
+    public String getExperiencia() {
+        return experiencia;
+    }
+
+    public void setExperiencia(String experiencia) {
+        this.experiencia = experiencia;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
     
     
 }
